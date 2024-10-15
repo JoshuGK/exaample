@@ -4,9 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Progress bar</title>
-        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="style.css">
       </head>
       <body>
-        <label>Progression: <progress value="70" max="100">70 %</progress></label>
+        <progress>
+            <div pseudo="-webkit-progress-inner-element">
+              <div pseudo="-webkit-progress-bar">
+                <div pseudo="-webkit-progress-value"></div>
+              </div>
+            </div>
+           <progress>
       </body>
 </html>
