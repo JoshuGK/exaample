@@ -3,10 +3,19 @@ body{
     padding: 0;
     background-color: #1b1b32;
 }
-.topbar{
+.image{
+    background-image: url(/recordpool/images/deck.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 600px;
+}
+#topbar{
     display: inline-block;
-    height: 30px;
-    position: fixed;
+    height: 80px;
+    width: 100%;
+    position:relative ;
     border: 1px solid rgb(13, 9, 1);
     border-radius: 10px;
     padding: 10px;
@@ -87,3 +96,184 @@ ul li a:hover{
 .srch:focus{
     outline: none;
 }
+.intro{
+   
+    height: 500px;
+    display: inline-flex;
+    color: aliceblue;
+    margin-top: 10px;
+    width: 100%;
+    
+}
+.intro p{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.intro button{
+    height: 40px;
+    border: 1px solid olivedrab;
+    border-radius: 5px;
+    padding-left: 60px;
+    margin-left: 40px;
+   
+}
+.intro button a{
+    text-decoration: none;
+    text-align: right;
+    color: black;
+    padding-right: 10px;
+}
+.intro button:hover{
+    color: whitesmoke;
+}
+.lib{
+    width: 100%;
+    background-color: black;
+}
+
+.lib h2{
+    text-align: center;
+    font-weight: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    font-size: 40px;
+}
+.lib-info{
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color:#333;
+    width: 400px;
+    height: 230px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+    border-radius: 10px; 
+}
+.lib-info:hover{
+    transform: translateX(50px);
+}
+.lib-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px; /* Height of the blurred area */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), transparent);
+}
+.lib-info small{
+    color: white;
+}
+
+.lib-info strong{
+    color: orange;
+}
+.head2{
+    color: white;
+    height: 35px;
+    text-align: center;
+}
+.head h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10px;
+    font-size: 30px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    padding: 15px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.icon {
+    font-size: 40px;
+    color: #854607;
+    margin-bottom: 10px;
+}
+
+
+.description {
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: rgba(30, 30, 30, 0.7);
+}
+
+.guarantee-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+    margin-left: 40%;
+}
+
+
+.ribbon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #ff6347;
+    border-radius: 8px;
+    animation: ribbonAppear 3s infinite alternate;
+}
+
+/* Text styling with color-changing effect */
+.guarantee-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    animation: colorChange 5s infinite;
+}
+
+/* Keyframes for color changing effect */
+@keyframes colorChange {
+    0% { color: #ff6347; }
+    25% { color: #f39c12; }
+    50% { color: #2ecc71; }
+    75% { color: #3498db; }
+    100% { color: #9b59b6; }
+}
+
+/* Keyframes for ribbon appearing and disappearing */
+@keyframes ribbonAppear {
+    0% { opacity: 0; transform: scale(1.05); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.95); }
+}
+
+
+
