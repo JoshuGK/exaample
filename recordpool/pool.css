@@ -251,7 +251,7 @@ ul li a:hover{
     animation: ribbonAppear 3s infinite alternate;
 }
 
-/* Text styling with color-changing effect */
+
 .guarantee-text {
     font-size: 24px;
     font-weight: bold;
@@ -259,7 +259,7 @@ ul li a:hover{
     animation: colorChange 5s infinite;
 }
 
-/* Keyframes for color changing effect */
+
 @keyframes colorChange {
     0% { color: #ff6347; }
     25% { color: #f39c12; }
@@ -268,12 +268,100 @@ ul li a:hover{
     100% { color: #9b59b6; }
 }
 
-/* Keyframes for ribbon appearing and disappearing */
+
 @keyframes ribbonAppear {
     0% { opacity: 0; transform: scale(1.05); }
     50% { opacity: 1; transform: scale(1); }
     100% { opacity: 0; transform: scale(0.95); }
 }
+.dj{
+    display: inline-flex;
+    background-color: #9b59b6;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+#fav{
+    color: cyan;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 8px;
 
+}
+.software{
+    display: inline-flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
 
+.dj .software .sof{
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    justify-content: space-between;
+}
+.soft{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    
+}
+.additions{
+    width: 100%;
+    height: 350px;
+    padding: 5px;
 
+}
+.add{
+    display: inline-flex;
+    background-color: chartreuse;
+    color: black;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.add p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-weight: 5px;
+    font-size: 2rem;
+    color: #ff0077; 
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+.add img{
+    object-fit: cover;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+.add img:hover {
+    transform: scale(1.05)
+}
+.end{
+    width: 100%;
+    height: 350px;
+    background-color:#1b1b32;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.last{
+    width: 20%;
+    height: 100%;
+    display: inline-flex;
+}
+.last ul{
+    justify-content: center;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.footer{
+    text-align: center;
+    height: 15px;
+    background-color: black;
+    color: white;
+}
