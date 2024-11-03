@@ -31,11 +31,14 @@ body{
     padding-left: 20px;
     padding-top: 10px;
     float: left;
+    text-shadow: 2px 2px 0 #333, 4px 4px 0 #999;
 }
+
 .sidebar{
-    width: 400px;
+    width: 450px;
     float: left;
     height: 70px;
+    padding-left: 50px;
 }
 ul{
     float: left;
@@ -64,37 +67,23 @@ ul li a:hover{
 .search{
     float: left;
     width: 330px;
-    margin-left: 270px;
-    margin-top: 12px;
+    margin-left: 500px;
+    margin-top: 15px;
 }
-.srch{
-    font-family: 'Times New Roman', Times, serif;
-    width: 200px;
-    height: 16px;
-    background: transparent;
-    font-size: 16px;
-    float: left;
-    color: white;
-    padding: 10px;
-    margin-top: 13px;
-    border: 1px solid orange;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
+
 .btn{
     margin-top: 13px;
     height: 40px;
-    width: 100px;
+    width: 150px;
     color: white;
     background: orange;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 10px;
 }
 .btn:focus{
     outline: none;
 }
-.srch:focus{
-    outline: none;
+.btn:hover{
+    color: white;
 }
 .intro{
    
@@ -352,7 +341,8 @@ ul li a:hover{
 .last{
     width: 20%;
     height: 100%;
-    display: inline-flex;
+    display: flex;
+    float: left;
 }
 .last ul{
     justify-content: center;
